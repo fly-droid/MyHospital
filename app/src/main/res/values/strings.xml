@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">MyHospital</string>
     <string name="welcomeMsg">Welcome to HopUniven</string>
+    
+    <string-array name="timeframes">
+        <item>Select time you avaible</item>
+        <item>7-9 AM</item>
+        <item>9-11 AM</item>
+        <item>11-2 PM</item>
+        <item>1-4 PM</item>
+        <item>4-7 PM</item>
+        <item>7-10 PM</item>
+        <item>10-1 AM</item>
+        <item>1-4 AM</item>
+    </string-array>
+
+    <string-array name="Specialization">
+        <item>Select Specialization</item>
+        <item>Dentist</item>
+        <item>Surgeon</item>
+        <item>Podiatrist</item>
+        <item>Endocrinologist</item>
+        <item>Nephrologist</item>
+        <item>Radiologist</item>
+        <item>Orthopedist</item>
+        <item>OB/GYN</item>
+        <item>Psychiatrist</item>
+        <item>Allergist</item>
+        <item>Pediatrician</item>
+        <item>General Practitioner</item>
+    </string-array>
 </resources>
