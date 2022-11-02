@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyHospital</string>
+    <string name="welcomeMsg">Welcome to HopUniven</string>
+</resources>

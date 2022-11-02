@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/heart"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/welcomeMsg"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+
+            <EditText
+                android:id="@+id/loginEmail"
+                android:hint="Enter your email"
+                android:drawableStart="@drawable/ic_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000" />
+
+            <EditText
+                android:id="@+id/loginPassword"
+                android:hint="Enter your email"
+                android:drawableStart="@drawable/ic_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttoncolorbackground"
+                android:text="Sign in Now"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                app:strokeColor="#391B1B" />
+
+            <TextView
+                android:id="@+id/loginQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do'nt have an account?register"
+                android:drawableStart="@drawable/ic_edit"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:textSize="17sp"
+                />
+            <TextView
+                android:id="@+id/Adimn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adimn login"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
