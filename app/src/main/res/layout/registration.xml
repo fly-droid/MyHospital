@@ -60,21 +60,18 @@
                 app:strokeColor="#391B1B" />
 
 
-
-
             <TextView
-                android:id="@+id/Adimn"
+                android:id="@+id/tvbacklog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Go back to login"
-                android:textAllCaps="false"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:text="Go back to login"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                />
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="20sp" />
 
 
         </LinearLayout>

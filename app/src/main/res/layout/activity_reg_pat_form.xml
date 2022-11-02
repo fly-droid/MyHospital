@@ -85,7 +85,7 @@
                 app:strokeColor="#391B1B" />
 
             <TextView
-                android:id="@+id/Adimn"
+                android:id="@+id/tvBack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Go back"
