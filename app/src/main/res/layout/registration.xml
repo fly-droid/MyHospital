@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9581B9"
     tools:context=".Registration">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,8 +16,9 @@
             android:id="@+id/log"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/heart"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:src="@drawable/plus" />
 
         <TextView
             android:id="@+id/title"
@@ -24,20 +26,21 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/welcomeMsg"
-            android:textColor="#000"
-            android:textSize="25sp"
             android:textAlignment="center"
+            android:textColor="#422494"
+            android:textSize="30sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
 
             <Button
-                android:id="@+id/regDoctor"
+                android:id="@+id/regPatient"
                 android:layout_width="309dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -46,28 +49,32 @@
                 android:text="Registor as patient"
                 android:textAllCaps="false"
                 android:textColor="#fff"
+                android:shadowColor="#CAA5D0"
                 app:strokeColor="#391B1B" />
+
             <Button
-                android:id="@+id/regPatient"
+                android:id="@+id/regDoctor"
                 android:layout_width="309dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/buttoncolorbackground"
-                android:text="Registor as doctor"
+                android:text="Registor as Doctor"
+                android:shadowColor="#CAA5D0"
                 android:textAllCaps="false"
                 android:textColor="#fff"
+                app:rippleColor="#00396A9B"
                 app:strokeColor="#391B1B" />
 
 
             <TextView
-                android:id="@+id/tvbacklog"
+                android:id="@+id/tvbackLog"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
-                android:text="Go back to login"
+                android:text="Go to login"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#000"
@@ -77,8 +84,6 @@
         </LinearLayout>
 
 
-
-
     </LinearLayout>
 
-  </ScrollView>
+</ScrollView>

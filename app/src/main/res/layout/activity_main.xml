@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9581B9"
     android:padding="20dp"
     tools:context=".MainActivity">
 
@@ -16,8 +17,9 @@
             android:id="@+id/log"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/heart"
-            android:layout_gravity="center"/>
+            android:paddingTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/heart" />
 
         <TextView
             android:id="@+id/title"
@@ -25,42 +27,43 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/welcomeMsg"
-            android:textColor="#000"
-            android:textSize="25sp"
             android:textAlignment="center"
+            android:textColor="#422494"
+            android:textSize="30sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:orientation="vertical"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
 
 
             <EditText
                 android:id="@+id/loginEmail"
-                android:hint="Enter your email"
-                android:drawableStart="@drawable/ic_mail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="10dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:hint="Enter your email"
                 android:inputType="textEmailAddress"
+                android:padding="10dp"
                 android:textColor="#000"
-                android:textSize="18sp"
-                android:textColorHint="#000" />
+                android:textColorHint="#000"
+                android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/loginPassword"
-                android:hint="Enter your email"
-                android:drawableStart="@drawable/ic_lock"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+                android:ems="10"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
                 android:padding="10dp"
                 android:textColor="#000"
-                android:textSize="18sp"
                 android:textColorHint="#000"
-                android:ems="10"
-                android:inputType="textPassword" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/loginButton"
@@ -72,42 +75,39 @@
                 android:text="Sign in Now"
                 android:textAllCaps="false"
                 android:textColor="#fff"
+                android:shadowColor="#CAA5D0"
                 app:strokeColor="#391B1B" />
 
             <TextView
                 android:id="@+id/loginQuestion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Do'nt have an account?register"
-                android:drawableStart="@drawable/ic_edit"
-                android:textAllCaps="false"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:drawableStart="@drawable/ic_edit"
+                android:text="Do'nt have an account?register"
+                android:textAllCaps="false"
                 android:textColor="#000"
-                android:textSize="17sp"
-                />
+                android:textSize="17sp" />
+
             <TextView
                 android:id="@+id/tvBack"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Adimn login"
-                android:textAllCaps="false"
-                android:layout_marginTop="20dp"
                 android:layout_gravity="center"
-                android:textColor="#000"
+                android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:text="Adimn login"
                 android:textAlignment="center"
-                android:textSize="20sp"
-                />
+                android:textAllCaps="false"
+                android:textColor="#000"
+                android:textSize="20sp" />
 
 
         </LinearLayout>
 
 
-
-
     </LinearLayout>
-
 
 
 </ScrollView>
