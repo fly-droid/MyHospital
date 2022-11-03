@@ -161,7 +161,7 @@ public class RegPatientForm extends AppCompatActivity {
                     });
                 }
 
-                Intent intentProfile = new Intent( RegPatientForm .this, Registration.class);
+                Intent intentProfile = new Intent( RegPatientForm .this, MainActivity.class);
                 startActivity(intentProfile);
             }
         });
@@ -169,7 +169,7 @@ public class RegPatientForm extends AppCompatActivity {
         Gobacklog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentLog = new Intent( RegPatientForm .this, PatientProfile.class);
+                Intent intentLog = new Intent( RegPatientForm .this, RegPatientForm.class);
                 startActivity(intentLog);
             }
         });

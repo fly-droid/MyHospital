@@ -129,7 +129,7 @@
 
 
             <Spinner
-                android:id="@+id/availabitySpinner"
+                android:id="@+id/spAvailabity"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:entries="@array/timeframes"
@@ -140,7 +140,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <Spinner
-                android:id="@+id/specialization"
+                android:id="@+id/spSpecialization"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:entries="@array/Specialization"
@@ -178,7 +178,7 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btnloginButton"
+                android:id="@+id/btnReg"
                 android:layout_width="251dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
