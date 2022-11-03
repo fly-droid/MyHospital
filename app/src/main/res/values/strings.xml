@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyHospital</string>
     <string name="welcomeMsg">Welcome to HopUniven</string>
-    
+
     <string-array name="timeframes">
         <item>Select time you avaible</item>
         <item>7-9 AM</item>

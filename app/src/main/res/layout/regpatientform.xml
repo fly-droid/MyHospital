@@ -147,14 +147,14 @@
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btnloginButton"
+                android:id="@+id/btnReg"
                 android:layout_width="198dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/buttoncolorbackground"
-                android:text="Register"
                 android:shadowColor="#CAA5D0"
+                android:text="Register"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 app:strokeColor="#391B1B" />
