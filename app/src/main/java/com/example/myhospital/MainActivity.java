@@ -66,9 +66,11 @@ public class MainActivity extends AppCompatActivity {
                      @Override
                      public void onComplete(@NonNull Task<AuthResult> task) {
                            if(task.isSuccessful()) {
-                               Intent intentProf = new Intent(  MainActivity .this, PatientProfile.class);
-                               startActivity(intentProf);
+
                                Toast.makeText(MainActivity.this, "You are login successfully", Toast.LENGTH_SHORT).show();
+
+                               Intent intent = new Intent(MainActivity.this, PatientProfile.class);
+                               startActivity(intent);
                            }else{
                                Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                            }
