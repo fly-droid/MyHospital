@@ -169,7 +169,7 @@ public class RegPatientForm extends AppCompatActivity {
         Gobacklog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentLog = new Intent( RegPatientForm .this, RegPatientForm.class);
+                Intent intentLog = new Intent( RegPatientForm .this, MainActivity.class);
                 startActivity(intentLog);
             }
         });

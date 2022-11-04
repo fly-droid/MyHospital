@@ -15,8 +15,5 @@ public class PatientProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_profile);
 
-
-
-
     }
 }

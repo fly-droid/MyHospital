@@ -5,18 +5,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatientProfile">
-  <ScrollView xmlns:tools="http://schemas.android.com/tools"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:orientation="vertical"
-      tools:context=".UserProfileActivity"
-      android:background="#8A8686">
+    tools:context=".PatientProfile"
+    android:background="#9581B9">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
+
 
       <RelativeLayout
           android:id="@+id/layout_head"
@@ -99,9 +97,11 @@
               android:id="@+id/textView_show_full_name"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_centerVertical="true"
               android:layout_alignStart="@id/ic_profile"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
               android:layout_marginStart="50dp"
+              android:layout_marginEnd="256dp"
               android:hint="loading" />
         </RelativeLayout>
 
@@ -134,9 +134,11 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignStart="@id/ic_email"
-              android:layout_marginStart="50dp"
+              android:layout_alignParentEnd="true"
               android:layout_centerVertical="true"
+              android:layout_marginStart="50dp"
               android:layout_marginTop="20dp"
+              android:layout_marginEnd="256dp"
               android:hint="loading" />
         </RelativeLayout>
 
@@ -169,9 +171,11 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignStart="@id/ic_dob"
+              android:layout_alignParentEnd="true"
               android:layout_centerVertical="true"
               android:layout_marginStart="50dp"
               android:layout_marginTop="20dp"
+              android:layout_marginEnd="256dp"
               android:hint="loading" />
         </RelativeLayout>
 
@@ -204,9 +208,11 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_alignStart="@id/ic_gender"
+              android:layout_alignParentEnd="true"
               android:layout_centerVertical="true"
               android:layout_marginStart="50dp"
               android:layout_marginTop="20dp"
+              android:layout_marginEnd="256dp"
               android:hint="loading" />
         </RelativeLayout>
 
@@ -237,10 +243,12 @@
               android:id="@+id/textView_show_mobile"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:layout_centerVertical="true"
               android:layout_alignStart="@id/ic_mobile"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
               android:layout_marginStart="50dp"
               android:layout_marginTop="20dp"
+              android:layout_marginEnd="256dp"
               android:hint="loading" />
         </RelativeLayout>
 
@@ -271,4 +279,3 @@
     </LinearLayout>
   </ScrollView>
 
-  </ScrollView>

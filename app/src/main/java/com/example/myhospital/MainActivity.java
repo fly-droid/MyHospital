@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextLoginEmail, editTextLoginPwd;
     private ProgressBar progressBar;
     private FirebaseAuth authProfile;
-    private TextView loginQuestion;
+   private TextView loginQuestion;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setTitle("Login");
+//        getSupportActionBar().setTitle("Login");
 
         editTextLoginEmail = findViewById(R.id.loginEmail);
         editTextLoginPwd = findViewById(R.id.loginPassword);
@@ -56,25 +56,26 @@ public class MainActivity extends AppCompatActivity {
                     editTextLoginPwd.setError("Password is required");
                     editTextLoginPwd.requestFocus();
                 }else{
-                    progressBar.setVisibility(View.VISIBLE);
                     loginUser(textEmail,textPassword);
                 }
-                Intent intentProf = new Intent(  MainActivity .this, PatientProfile.class);
-                startActivity(intentProf);
-            }                                                 
+
+            }
 
             private void loginUser(String email, String password) {
                  authProfile.signInWithEmailAndPassword(email,password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                      @Override
                      public void onComplete(@NonNull Task<AuthResult> task) {
                            if(task.isSuccessful()) {
+                               Intent intentProf = new Intent(  MainActivity .this, PatientProfile.class);
+                               startActivity(intentProf);
                                Toast.makeText(MainActivity.this, "You are login successfully", Toast.LENGTH_SHORT).show();
                            }else{
                                Toast.makeText(MainActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                            }
-                           progressBar.setVisibility(View.GONE);
+
                      }
                  });
+
             }
         });
         loginQuestion.setOnClickListener(new View.OnClickListener() {
